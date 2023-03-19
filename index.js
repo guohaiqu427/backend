@@ -25,7 +25,7 @@ app.use("/api/decker", decker)
 
 require("./prod")(app)
 
-//todo: environment variable based port
-app.listen(3000, ()=> {
-    console.log("listening on port 3000")
-})
+const port = process.env.PORT || config.get("port");
+app.listen(port, () =>
+  console.log(`Listening on port ${port}...`)
+);

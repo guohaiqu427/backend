@@ -1,3 +1,4 @@
 {
-    "jwtPrivatekey" : "vincent_backend_jwtPrivatekey"
+    "jwtPrivatekey" : "vincent_backend_jwtPrivatekey",
+    "db": "vincent_backend_db"
 }
